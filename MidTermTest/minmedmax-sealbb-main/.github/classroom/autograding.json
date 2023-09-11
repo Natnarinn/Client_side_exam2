@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "test&#45;minMedMax",
+      "setup": "npm install",
+      "run": "npm test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
