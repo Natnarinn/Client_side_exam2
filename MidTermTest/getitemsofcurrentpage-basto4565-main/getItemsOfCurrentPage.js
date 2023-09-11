@@ -15,13 +15,13 @@ function getItemsOfCurrentPage(allItems, currentPage, rowsPerPage) {
   if (currentPage <= 0) {
     return allItems
   }
+  const pages = 1
   if (rowsPerPage < allItems.length) {
-
+      console.log(pages)
+  } else{    
+    pages = Math.ceil(allItems.length / rowsPerPage)
+    console.log(pages)
   }  
-    const page = 1
-    page = Math.ceil(allItems / rowsPerPage)
-  }
-  
 }
 
 
