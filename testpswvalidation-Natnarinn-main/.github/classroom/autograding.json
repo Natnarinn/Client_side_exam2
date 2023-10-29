@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "test&#45;psw&#45;validation",
+      "setup": "npm install",
+      "run": "npm test",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 15
+    }
+  ]
+}

@@ -79,29 +79,25 @@ console.log(z[0]) //10
 console.log(z[z.length - 1]) // A
 */
 
-
 // 4. create array with Array.of factory method
 const x2 = Array.of(5)
-const y2 = Array.of(5,7,9)
-const z2 = Array.of(true,'A','JS')
+const y2 = Array.of(5, 7, 9)
+const z2 = Array.of(true, "A", "JS")
 
 console.log(x2.length) //1
 console.log(y2.length) //3
 console.log(z2.length) //3
 
-
-
 // 5. create array with Array.from factory method
-const x1 = [1,3,5]
-const y1 = [2,4,6]
-const z1 = Array.from(x1)
-const a1 = [...x1, ...y1]
-console.log(a1)
+// const x1 = [1,3,5]
+// const y1 = [2,4,6]
+// const z1 = Array.from(x1)
+// const a1 = [...x1, ...y1]
+// console.log(a1)
 
-delete x[1]
-console.log(x)
-console.log(x.length)
-
+// delete x[1]
+// console.log(x)
+// console.log(x.length)
 
 /*
 //destructuring array
@@ -203,18 +199,37 @@ console.log(typeof x) //function
 console.log(x('1','first')) //1first
 */
 
-const x = function(a) {
-    //a=b , a=1
-    a = 2
+const x = function (a) {
+  //a=b , a=1
+  a = 2
 }
 let b = 1
 x(b)
 console.log(b) // b does not change after calling x()
 
 //object parameter passing
-const y = function(m) {
-    m.id = 555
+const y = function (m) {
+  m.id = 555
 }
-const std = {id: 65130500018 , name: 'Natnarin'}
+const std = { id: 65130500018, name: "Natnarin" }
 y(std)
 console.log(std.id) //std will change as fuction make change
+
+// const object1 = {
+//   a: "somestring",
+//   b: 42,
+//   c: false
+// }
+
+// console.log(Object.values(object1))
+// // Expected output: Array ["somestring", 42, false]
+
+// if (object1 !== {}) console.log("t")
+
+let arr 
+arr = arr ??  [1,2]
+console.log(arr?.length)
+
+let x1
+x1 = x1 ?? ['etete', 'ji']
+console.log(x1?.[1])
